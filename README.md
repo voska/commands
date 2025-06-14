@@ -153,13 +153,13 @@ Profile and optimize application performance.
 ## Command Features
 
 All commands include:
-- <× **Production-ready code** - No placeholders or TODOs
-- = **Security best practices** - Authentication, validation, sanitization
-- =Ê **Monitoring & observability** - Metrics, logging, tracing
-- >ê **Comprehensive testing** - Unit, integration, performance tests
-- =Ú **Documentation** - API docs, architecture diagrams, deployment guides
-- ¡ **Performance optimization** - Caching, async patterns, resource efficiency
-- =¨ **Error handling** - Graceful degradation, recovery strategies
+- **Production-ready code** - No placeholders or TODOs
+- **Security best practices** - Authentication, validation, sanitization
+- **Monitoring & observability** - Metrics, logging, tracing
+- **Comprehensive testing** - Unit, integration, performance tests
+- **Documentation** - API docs, architecture diagrams, deployment guides
+- **Performance optimization** - Caching, async patterns, resource efficiency
+- **Error handling** - Graceful degradation, recovery strategies
 
 ## Usage Examples
 
