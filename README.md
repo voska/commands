@@ -2,6 +2,17 @@
 
 A collection of production-ready slash commands for Claude Code to accelerate software development workflows.
 
+## Installation
+
+Clone this repository to your local `.claude` directory for easy access:
+
+```bash
+cd ~/.claude
+git clone https://github.com/wshobson/commands.git
+```
+
+This will make all slash commands available to Claude Code in any project.
+
 ## Overview
 
 These commands provide instant access to comprehensive scaffolding, analysis, and optimization tools. Each command accepts context-specific arguments and generates production-ready code with best practices built-in.
