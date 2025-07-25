@@ -33,24 +33,24 @@ These commands use multiple specialized agents working together to complete comp
 
 ### Feature Development
 
-- **`/feature-development`** - Orchestrates backend-architect, frontend-developer, test-automator, and deployment-engineer to implement complete features
-- **`/full-review`** - Comprehensive review using code-reviewer, security-auditor, architect-reviewer, performance-engineer, and test-automator
-- **`/smart-fix`** - Intelligently analyzes issues and delegates to the most appropriate specialist agents
+- **[`/feature-development`](workflows/feature-development.md)** - Orchestrates backend-architect, frontend-developer, test-automator, and deployment-engineer to implement complete features
+- **[`/full-review`](workflows/full-review.md)** - Comprehensive review using code-reviewer, security-auditor, architect-reviewer, performance-engineer, and test-automator
+- **[`/smart-fix`](workflows/smart-fix.md)** - Intelligently analyzes issues and delegates to the most appropriate specialist agents
 
 ### Development Processes
 
-- **`/git-workflow`** - Implements effective Git workflows with branching strategies and PR templates
-- **`/improve-agent`** - Enhances agent performance through prompt optimization and capability analysis
-- **`/legacy-modernize`** - Systematically modernizes legacy codebases using specialized migration agents
-- **`/ml-pipeline`** - Creates end-to-end ML pipelines with MLOps using data and ML engineering agents
-- **`/multi-platform`** - Builds cross-platform applications coordinating mobile, web, and backend agents
-- **`/workflow-automate`** - Automates development workflows across CI/CD, monitoring, and deployment
+- **[`/git-workflow`](workflows/git-workflow.md)** - Implements effective Git workflows with branching strategies and PR templates
+- **[`/improve-agent`](workflows/improve-agent.md)** - Enhances agent performance through prompt optimization and capability analysis
+- **[`/legacy-modernize`](workflows/legacy-modernize.md)** - Systematically modernizes legacy codebases using specialized migration agents
+- **[`/ml-pipeline`](workflows/ml-pipeline.md)** - Creates end-to-end ML pipelines with MLOps using data and ML engineering agents
+- **[`/multi-platform`](workflows/multi-platform.md)** - Builds cross-platform applications coordinating mobile, web, and backend agents
+- **[`/workflow-automate`](workflows/workflow-automate.md)** - Automates development workflows across CI/CD, monitoring, and deployment
 
 ## 🔧 Tools (Single-Purpose Commands)
 
 ### AI & Machine Learning
 
-#### `/ai-assistant`
+#### [`/ai-assistant`](tools/ai-assistant.md)
 
 Build production-ready AI assistants and chatbots.
 
@@ -60,7 +60,7 @@ Build production-ready AI assistants and chatbots.
 - Streaming responses
 - Rate limiting and cost controls
 
-#### `/ai-review`
+#### [`/ai-review`](tools/ai-review.md)
 
 Specialized review for AI/ML codebases.
 
@@ -70,7 +70,7 @@ Specialized review for AI/ML codebases.
 - GPU/CPU resource utilization
 - MLOps best practices
 
-#### `/langchain-agent`
+#### [`/langchain-agent`](tools/langchain-agent.md)
 
 Create LangChain/LangGraph agents with modern patterns.
 
@@ -80,7 +80,7 @@ Create LangChain/LangGraph agents with modern patterns.
 - Streaming and async support
 - Observability with LangSmith
 
-#### `/ml-pipeline`
+#### [`/ml-pipeline`](tools/ml-pipeline.md)
 
 Create end-to-end ML pipelines with MLOps.
 
@@ -90,7 +90,7 @@ Create end-to-end ML pipelines with MLOps.
 - A/B testing frameworks
 - Model monitoring and drift detection
 
-#### `/prompt-optimize`
+#### [`/prompt-optimize`](tools/prompt-optimize.md)
 
 Optimize AI prompts for performance and quality.
 
@@ -102,7 +102,7 @@ Optimize AI prompts for performance and quality.
 
 ### Architecture & Code Quality
 
-#### `/arch-review`
+#### [`/arch-review`](tools/arch-review.md)
 
 Comprehensive architecture analysis and recommendations.
 
@@ -112,7 +112,7 @@ Comprehensive architecture analysis and recommendations.
 - Technical debt identification
 - Modernization roadmap
 
-#### `/code-explain`
+#### [`/code-explain`](tools/code-explain.md)
 
 Generate detailed explanations of complex code.
 
@@ -122,7 +122,7 @@ Generate detailed explanations of complex code.
 - Complexity analysis
 - Best practice recommendations
 
-#### `/code-migrate`
+#### [`/code-migrate`](tools/code-migrate.md)
 
 Migrate code between languages, frameworks, or versions.
 
@@ -132,7 +132,7 @@ Migrate code between languages, frameworks, or versions.
 - Dependency updates
 - Test migration
 
-#### `/legacy-modernize`
+#### [`/legacy-modernize`](tools/legacy-modernize.md)
 
 Modernize legacy codebases systematically.
 
@@ -142,7 +142,7 @@ Modernize legacy codebases systematically.
 - Gradual migration plans
 - Risk assessment
 
-#### `/refactor-clean`
+#### [`/refactor-clean`](tools/refactor-clean.md)
 
 Refactor code for maintainability and performance.
 
@@ -152,7 +152,7 @@ Refactor code for maintainability and performance.
 - Complexity reduction
 - Test coverage improvement
 
-#### `/tech-debt`
+#### [`/tech-debt`](tools/tech-debt.md)
 
 Analyze and prioritize technical debt.
 
@@ -164,7 +164,7 @@ Analyze and prioritize technical debt.
 
 ### Data & Database
 
-#### `/data-pipeline`
+#### [`/data-pipeline`](tools/data-pipeline.md)
 
 Design scalable data pipeline architectures.
 
@@ -174,7 +174,7 @@ Design scalable data pipeline architectures.
 - Storage strategies (data lake/warehouse)
 - Monitoring and alerting
 
-#### `/data-validation`
+#### [`/data-validation`](tools/data-validation.md)
 
 Implement comprehensive data validation systems.
 
@@ -184,7 +184,7 @@ Implement comprehensive data validation systems.
 - Data profiling and anomaly detection
 - Performance optimization
 
-#### `/db-migrate`
+#### [`/db-migrate`](tools/db-migrate.md)
 
 Advanced database migration strategies.
 
@@ -194,7 +194,7 @@ Advanced database migration strategies.
 - **Cross-Platform**: Handles polyglot persistence
 - **Cross-Command Integration**: API-aware migrations
 
-#### `/db-optimize`
+#### [`/db-optimize`](tools/db-optimize.md)
 
 Optimize database performance and queries.
 
@@ -206,7 +206,7 @@ Optimize database performance and queries.
 
 ### DevOps & Infrastructure
 
-#### `/deploy-checklist`
+#### [`/deploy-checklist`](tools/deploy-checklist.md)
 
 Generate deployment configurations and checklists.
 
@@ -216,7 +216,7 @@ Generate deployment configurations and checklists.
 - Security configurations
 - Rollback procedures
 
-#### `/docker-optimize`
+#### [`/docker-optimize`](tools/docker-optimize.md)
 
 Advanced container optimization strategies.
 
@@ -226,7 +226,7 @@ Advanced container optimization strategies.
 - **Security Hardening**: Distroless images, non-root users
 - **Cross-Command Integration**: Works with /api-scaffold outputs
 
-#### `/k8s-manifest`
+#### [`/k8s-manifest`](tools/k8s-manifest.md)
 
 Production-grade Kubernetes deployments.
 
@@ -236,7 +236,7 @@ Production-grade Kubernetes deployments.
 - **Auto-Scaling**: HPA, VPA, and cluster autoscaler configs
 - **Service Mesh**: Istio/Linkerd integration
 
-#### `/monitor-setup`
+#### [`/monitor-setup`](tools/monitor-setup.md)
 
 Set up comprehensive monitoring and observability.
 
@@ -246,7 +246,7 @@ Set up comprehensive monitoring and observability.
 - Alerting rules and runbooks
 - SLI/SLO definitions
 
-#### `/slo-implement`
+#### [`/slo-implement`](tools/slo-implement.md)
 
 Implement Service Level Objectives (SLOs).
 
@@ -256,7 +256,7 @@ Implement Service Level Objectives (SLOs).
 - SLO dashboards
 - Reliability reporting
 
-#### `/workflow-automate`
+#### [`/workflow-automate`](tools/workflow-automate.md)
 
 Automate development and operational workflows.
 
@@ -268,7 +268,7 @@ Automate development and operational workflows.
 
 ### Development & Testing
 
-#### `/api-mock`
+#### [`/api-mock`](tools/api-mock.md)
 
 Create realistic API mocks for development and testing.
 
@@ -278,7 +278,7 @@ Create realistic API mocks for development and testing.
 - Performance simulation
 - Error scenario testing
 
-#### `/api-scaffold`
+#### [`/api-scaffold`](tools/api-scaffold.md)
 
 Generate production-ready API endpoints with complete implementation stack.
 
@@ -288,7 +288,7 @@ Generate production-ready API endpoints with complete implementation stack.
 - **Database Integration**: SQLAlchemy, Prisma, Django ORM with migrations
 - **Cross-Command Integration**: Works with /test-harness, /security-scan, /docker-optimize
 
-#### `/test-harness`
+#### [`/test-harness`](tools/test-harness.md)
 
 Create comprehensive test suites with framework detection.
 
@@ -298,7 +298,7 @@ Create comprehensive test suites with framework detection.
 - **CI/CD Ready**: GitHub Actions and GitLab CI workflows included
 - **Cross-Command Integration**: Tests APIs, containers, and more
 
-#### `/frontend-optimize`
+#### [`/frontend-optimize`](tools/frontend-optimize.md)
 
 Modern frontend performance optimization.
 
@@ -310,7 +310,7 @@ Modern frontend performance optimization.
 
 ### Security & Compliance
 
-#### `/accessibility-audit`
+#### [`/accessibility-audit`](tools/accessibility-audit.md)
 
 Comprehensive accessibility testing and fixes.
 
@@ -320,7 +320,7 @@ Comprehensive accessibility testing and fixes.
 - Keyboard navigation
 - ARIA implementation
 
-#### `/compliance-check`
+#### [`/compliance-check`](tools/compliance-check.md)
 
 Ensure regulatory compliance (GDPR, HIPAA, SOC2).
 
@@ -330,7 +330,7 @@ Ensure regulatory compliance (GDPR, HIPAA, SOC2).
 - Automated compliance tests
 - Remediation guidance
 
-#### `/security-scan`
+#### [`/security-scan`](tools/security-scan.md)
 
 Comprehensive security scanning with automated remediation.
 
@@ -342,7 +342,7 @@ Comprehensive security scanning with automated remediation.
 
 ### Debugging & Analysis
 
-#### `/debug-trace`
+#### [`/debug-trace`](tools/debug-trace.md)
 
 Advanced debugging and tracing strategies.
 
@@ -352,7 +352,7 @@ Advanced debugging and tracing strategies.
 - Performance profiling
 - Memory leak detection
 
-#### `/error-analysis`
+#### [`/error-analysis`](tools/error-analysis.md)
 
 Deep error pattern analysis and resolution strategies.
 
@@ -362,7 +362,7 @@ Deep error pattern analysis and resolution strategies.
 - Recovery mechanisms
 - Prevention strategies
 
-#### `/error-trace`
+#### [`/error-trace`](tools/error-trace.md)
 
 Trace and diagnose production errors.
 
@@ -372,7 +372,7 @@ Trace and diagnose production errors.
 - Reproduction steps
 - Fix verification
 
-#### `/performance-review`
+#### [`/performance-review`](tools/performance-review.md)
 
 Profile and optimize application performance.
 
@@ -384,7 +384,7 @@ Profile and optimize application performance.
 
 ### Dependencies & Configuration
 
-#### `/config-validate`
+#### [`/config-validate`](tools/config-validate.md)
 
 Validate and manage application configuration.
 
@@ -394,7 +394,7 @@ Validate and manage application configuration.
 - Configuration drift detection
 - Multi-environment configs
 
-#### `/deps-audit`
+#### [`/deps-audit`](tools/deps-audit.md)
 
 Audit dependencies for security and licensing.
 
@@ -404,7 +404,7 @@ Audit dependencies for security and licensing.
 - Dependency graph analysis
 - Risk assessment
 
-#### `/deps-upgrade`
+#### [`/deps-upgrade`](tools/deps-upgrade.md)
 
 Safely upgrade project dependencies.
 
@@ -416,7 +416,7 @@ Safely upgrade project dependencies.
 
 ### Documentation & Collaboration
 
-#### `/doc-generate`
+#### [`/doc-generate`](tools/doc-generate.md)
 
 Generate comprehensive documentation.
 
@@ -426,7 +426,7 @@ Generate comprehensive documentation.
 - Runbooks
 - Code examples
 
-#### `/git-workflow`
+#### [`/git-workflow`](tools/git-workflow.md)
 
 Implement effective Git workflows.
 
@@ -436,7 +436,7 @@ Implement effective Git workflows.
 - Merge strategies
 - Release workflows
 
-#### `/issue`
+#### [`/issue`](tools/issue.md)
 
 Create well-structured GitHub/GitLab issues.
 
@@ -446,7 +446,7 @@ Create well-structured GitHub/GitLab issues.
 - Acceptance criteria
 - Labels and milestones
 
-#### `/pr-enhance`
+#### [`/pr-enhance`](tools/pr-enhance.md)
 
 Enhance pull requests with quality checks.
 
@@ -458,7 +458,7 @@ Enhance pull requests with quality checks.
 
 ### Cost Optimization
 
-#### `/cost-optimize`
+#### [`/cost-optimize`](tools/cost-optimize.md)
 
 Optimize cloud and infrastructure costs.
 
@@ -467,6 +467,18 @@ Optimize cloud and infrastructure costs.
 - Reserved instance planning
 - Spot instance strategies
 - Cost allocation and tagging
+
+### Onboarding & Setup
+
+#### [`/onboard`](tools/onboard.md)
+
+Set up development environments for new team members.
+
+- Development tool installation
+- IDE configuration
+- Git setup and authentication
+- Project dependencies
+- Local environment configuration
 
 ## Command Features
 
@@ -554,7 +566,7 @@ All commands include:
 
 ### Security & DevOps
 
-#### `/security-scan`
+#### [`/security-scan`](tools/security-scan.md)
 
 Comprehensive security scanning with automated remediation.
 
@@ -564,7 +576,7 @@ Comprehensive security scanning with automated remediation.
 - **Container Scanning**: Image vulnerability analysis
 - **Secret Detection**: GitLeaks and TruffleHog integration
 
-#### `/docker-optimize`
+#### [`/docker-optimize`](tools/docker-optimize.md)
 
 Advanced container optimization strategies.
 
@@ -574,7 +586,7 @@ Advanced container optimization strategies.
 - **Security Hardening**: Distroless images, non-root users
 - **Cross-Command Integration**: Works with /api-scaffold outputs
 
-#### `/k8s-manifest`
+#### [`/k8s-manifest`](tools/k8s-manifest.md)
 
 Production-grade Kubernetes deployments.
 
@@ -586,7 +598,7 @@ Production-grade Kubernetes deployments.
 
 ### Frontend & Data
 
-#### `/frontend-optimize`
+#### [`/frontend-optimize`](tools/frontend-optimize.md)
 
 Modern frontend performance optimization.
 
@@ -596,7 +608,7 @@ Modern frontend performance optimization.
 - **Modern Patterns**: Code splitting, lazy loading, prefetching
 - **CDN & Caching**: Cloudflare, Fastly configurations
 
-#### `/db-migrate`
+#### [`/db-migrate`](tools/db-migrate.md)
 
 Advanced database migration strategies.
 
