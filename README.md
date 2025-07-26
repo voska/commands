@@ -1,24 +1,39 @@
-# Claude Code Slash Commands
+# Claude Code Slash Commands Collection
 
-A collection of production-ready slash commands for Claude Code to accelerate software development workflows. Commands are organized into two categories: **workflows** (smart agent orchestration) and **tools** (single-purpose utilities).
+A comprehensive collection of production-ready slash commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), designed to accelerate software development workflows through intelligent automation and agent orchestration.
+
+## Overview
+
+This repository contains 45 specialized slash commands that extend Claude Code's capabilities. Commands are organized into **workflows** (smart agent orchestration) and **tools** (single-purpose utilities) to provide comprehensive development automation.
 
 ## Installation
 
-Clone this repository to your local `.claude` directory for easy access:
+These commands are automatically available when placed in `~/.claude/commands/` directory.
 
 ```bash
 cd ~/.claude
 git clone https://github.com/wshobson/commands.git
 ```
 
-This will make all slash commands available to Claude Code in any project.
+## Available Commands
 
-## Overview
-
-These commands leverage Claude Code's specialized agent system to provide intelligent automation for complex development tasks. The collection is organized into:
+The collection is organized into:
 
 - **🤖 Workflows** (`/workflows/`): Smart agent orchestration commands that coordinate multiple specialized subagents to complete complex, multi-step tasks
 - **🔧 Tools** (`/tools/`): Single-purpose commands for specific development tasks with comprehensive implementations
+
+## Usage
+
+### Automatic Invocation
+Claude Code will automatically suggest appropriate commands based on the task context and requirements.
+
+### Explicit Invocation
+Run any command directly by typing the command name:
+```
+/api-scaffold user management with authentication
+/security-scan check for vulnerabilities in Docker images
+/feature-development implement real-time chat functionality
+```
 
 ### Key Features
 
@@ -32,453 +47,82 @@ These commands leverage Claude Code's specialized agent system to provide intell
 These commands use multiple specialized agents working together to complete complex tasks:
 
 ### Feature Development
-
-- **[`/feature-development`](workflows/feature-development.md)** - Orchestrates backend-architect, frontend-developer, test-automator, and deployment-engineer to implement complete features
-- **[`/full-review`](workflows/full-review.md)** - Comprehensive review using code-reviewer, security-auditor, architect-reviewer, performance-engineer, and test-automator
-- **[`/smart-fix`](workflows/smart-fix.md)** - Intelligently analyzes issues and delegates to the most appropriate specialist agents
+- **[feature-development](workflows/feature-development.md)** - Orchestrates backend-architect, frontend-developer, test-automator, and deployment-engineer to implement complete features
+- **[full-review](workflows/full-review.md)** - Comprehensive review using code-reviewer, security-auditor, architect-reviewer, performance-engineer, and test-automator
+- **[smart-fix](workflows/smart-fix.md)** - Intelligently analyzes issues and delegates to the most appropriate specialist agents
 
 ### Development Processes
-
-- **[`/git-workflow`](workflows/git-workflow.md)** - Implements effective Git workflows with branching strategies and PR templates
-- **[`/improve-agent`](workflows/improve-agent.md)** - Enhances agent performance through prompt optimization and capability analysis
-- **[`/legacy-modernize`](workflows/legacy-modernize.md)** - Systematically modernizes legacy codebases using specialized migration agents
-- **[`/ml-pipeline`](workflows/ml-pipeline.md)** - Creates end-to-end ML pipelines with MLOps using data and ML engineering agents
-- **[`/multi-platform`](workflows/multi-platform.md)** - Builds cross-platform applications coordinating mobile, web, and backend agents
-- **[`/workflow-automate`](workflows/workflow-automate.md)** - Automates development workflows across CI/CD, monitoring, and deployment
+- **[git-workflow](workflows/git-workflow.md)** - Implements effective Git workflows with branching strategies and PR templates
+- **[improve-agent](workflows/improve-agent.md)** - Enhances agent performance through prompt optimization and capability analysis
+- **[legacy-modernize](workflows/legacy-modernize.md)** - Systematically modernizes legacy codebases using specialized migration agents
+- **[ml-pipeline](workflows/ml-pipeline.md)** - Creates end-to-end ML pipelines with MLOps using data and ML engineering agents
+- **[multi-platform](workflows/multi-platform.md)** - Builds cross-platform applications coordinating mobile, web, and backend agents
+- **[workflow-automate](workflows/workflow-automate.md)** - Automates development workflows across CI/CD, monitoring, and deployment
 
 ## 🔧 Tools (Single-Purpose Commands)
 
 ### AI & Machine Learning
-
-#### [`/ai-assistant`](tools/ai-assistant.md)
-
-Build production-ready AI assistants and chatbots.
-
-- LLM integration (OpenAI, Anthropic, local models)
-- Conversation management and memory
-- Function calling and tool use
-- Streaming responses
-- Rate limiting and cost controls
-
-#### [`/ai-review`](tools/ai-review.md)
-
-Specialized review for AI/ML codebases.
-
-- Model reproducibility and data leakage checks
-- LLM security (prompt injection, token limits)
-- Vector database optimization
-- GPU/CPU resource utilization
-- MLOps best practices
-
-#### [`/langchain-agent`](tools/langchain-agent.md)
-
-Create LangChain/LangGraph agents with modern patterns.
-
-- Tool implementations and chain definitions
-- Memory systems (conversation, entity, summary)
-- RAG integration with vector stores
-- Streaming and async support
-- Observability with LangSmith
-
-#### [`/ml-pipeline`](tools/ml-pipeline.md)
-
-Create end-to-end ML pipelines with MLOps.
-
-- Feature engineering pipelines
-- Model training and versioning
-- Hyperparameter optimization
-- A/B testing frameworks
-- Model monitoring and drift detection
-
-#### [`/prompt-optimize`](tools/prompt-optimize.md)
-
-Optimize AI prompts for performance and quality.
-
-- Prompt engineering techniques
-- Context window optimization
-- Few-shot learning examples
-- Chain-of-thought prompting
-- Cost and latency reduction
+- **[ai-assistant](tools/ai-assistant.md)** - Build production-ready AI assistants and chatbots
+- **[ai-review](tools/ai-review.md)** - Specialized review for AI/ML codebases
+- **[langchain-agent](tools/langchain-agent.md)** - Create LangChain/LangGraph agents with modern patterns
+- **[ml-pipeline](tools/ml-pipeline.md)** - Create end-to-end ML pipelines with MLOps
+- **[prompt-optimize](tools/prompt-optimize.md)** - Optimize AI prompts for performance and quality
 
 ### Architecture & Code Quality
-
-#### [`/arch-review`](tools/arch-review.md)
-
-Comprehensive architecture analysis and recommendations.
-
-- SOLID principles compliance
-- Scalability and performance patterns
-- Security vulnerability assessment
-- Technical debt identification
-- Modernization roadmap
-
-#### [`/code-explain`](tools/code-explain.md)
-
-Generate detailed explanations of complex code.
-
-- Function and class documentation
-- Architecture diagrams
-- Flow charts and sequence diagrams
-- Complexity analysis
-- Best practice recommendations
-
-#### [`/code-migrate`](tools/code-migrate.md)
-
-Migrate code between languages, frameworks, or versions.
-
-- Language translation (Python↔JS, Java↔C#)
-- Framework migration (Express→Fastify, Django→FastAPI)
-- Version upgrades with breaking changes
-- Dependency updates
-- Test migration
-
-#### [`/legacy-modernize`](tools/legacy-modernize.md)
-
-Modernize legacy codebases systematically.
-
-- Monolith to microservices migration
-- Database modernization
-- API versioning strategies
-- Gradual migration plans
-- Risk assessment
-
-#### [`/refactor-clean`](tools/refactor-clean.md)
-
-Refactor code for maintainability and performance.
-
-- Design pattern implementation
-- Code smell elimination
-- Performance optimizations
-- Complexity reduction
-- Test coverage improvement
-
-#### [`/tech-debt`](tools/tech-debt.md)
-
-Analyze and prioritize technical debt.
-
-- Debt quantification metrics
-- Impact analysis
-- Remediation roadmap
-- Cost/benefit analysis
-- Quick wins identification
+- **[arch-review](tools/arch-review.md)** - Comprehensive architecture analysis and recommendations
+- **[code-explain](tools/code-explain.md)** - Generate detailed explanations of complex code
+- **[code-migrate](tools/code-migrate.md)** - Migrate code between languages, frameworks, or versions
+- **[legacy-modernize](tools/legacy-modernize.md)** - Modernize legacy codebases systematically
+- **[refactor-clean](tools/refactor-clean.md)** - Refactor code for maintainability and performance
+- **[tech-debt](tools/tech-debt.md)** - Analyze and prioritize technical debt
 
 ### Data & Database
-
-#### [`/data-pipeline`](tools/data-pipeline.md)
-
-Design scalable data pipeline architectures.
-
-- ETL/ELT workflows with Airflow/Prefect
-- Streaming with Kafka/Kinesis
-- Data quality and validation layers
-- Storage strategies (data lake/warehouse)
-- Monitoring and alerting
-
-#### [`/data-validation`](tools/data-validation.md)
-
-Implement comprehensive data validation systems.
-
-- Schema validation with Pydantic/JSON Schema
-- Statistical quality checks
-- Custom business rule validation
-- Data profiling and anomaly detection
-- Performance optimization
-
-#### [`/db-migrate`](tools/db-migrate.md)
-
-Advanced database migration strategies.
-
-- **Multi-Database**: PostgreSQL, MySQL, MongoDB, DynamoDB
-- **Zero-Downtime**: Blue-green deployments, rolling migrations
-- **Event Sourcing**: Kafka/Kinesis integration for CDC
-- **Cross-Platform**: Handles polyglot persistence
-- **Cross-Command Integration**: API-aware migrations
-
-#### [`/db-optimize`](tools/db-optimize.md)
-
-Optimize database performance and queries.
-
-- Query performance analysis
-- Index optimization
-- Connection pooling
-- Caching strategies
-- Partitioning and sharding
+- **[data-pipeline](tools/data-pipeline.md)** - Design scalable data pipeline architectures
+- **[data-validation](tools/data-validation.md)** - Implement comprehensive data validation systems
+- **[db-migrate](tools/db-migrate.md)** - Advanced database migration strategies
+- **[db-optimize](tools/db-optimize.md)** - Optimize database performance and queries
 
 ### DevOps & Infrastructure
-
-#### [`/deploy-checklist`](tools/deploy-checklist.md)
-
-Generate deployment configurations and checklists.
-
-- Environment-specific configs
-- CI/CD pipeline definitions
-- Infrastructure as Code templates
-- Security configurations
-- Rollback procedures
-
-#### [`/docker-optimize`](tools/docker-optimize.md)
-
-Advanced container optimization strategies.
-
-- **Smart Optimization**: Analyzes and suggests improvements
-- **Multi-Stage Builds**: Framework-specific optimized Dockerfiles
-- **Modern Tools**: BuildKit, Bun, UV for faster builds
-- **Security Hardening**: Distroless images, non-root users
-- **Cross-Command Integration**: Works with /api-scaffold outputs
-
-#### [`/k8s-manifest`](tools/k8s-manifest.md)
-
-Production-grade Kubernetes deployments.
-
-- **Advanced Patterns**: Pod Security Standards, Network Policies, OPA
-- **GitOps Ready**: FluxCD and ArgoCD configurations
-- **Observability**: Prometheus ServiceMonitors, OpenTelemetry
-- **Auto-Scaling**: HPA, VPA, and cluster autoscaler configs
-- **Service Mesh**: Istio/Linkerd integration
-
-#### [`/monitor-setup`](tools/monitor-setup.md)
-
-Set up comprehensive monitoring and observability.
-
-- Prometheus and Grafana dashboards
-- OpenTelemetry instrumentation
-- Log aggregation (ELK/Loki)
-- Alerting rules and runbooks
-- SLI/SLO definitions
-
-#### [`/slo-implement`](tools/slo-implement.md)
-
-Implement Service Level Objectives (SLOs).
-
-- SLI identification and measurement
-- Error budget tracking
-- Alerting based on burn rates
-- SLO dashboards
-- Reliability reporting
-
-#### [`/workflow-automate`](tools/workflow-automate.md)
-
-Automate development and operational workflows.
-
-- GitHub Actions workflows
-- GitLab CI pipelines
-- Jenkins pipelines
-- Terraform automation
-- Release automation
+- **[deploy-checklist](tools/deploy-checklist.md)** - Generate deployment configurations and checklists
+- **[docker-optimize](tools/docker-optimize.md)** - Advanced container optimization strategies
+- **[k8s-manifest](tools/k8s-manifest.md)** - Production-grade Kubernetes deployments
+- **[monitor-setup](tools/monitor-setup.md)** - Set up comprehensive monitoring and observability
+- **[slo-implement](tools/slo-implement.md)** - Implement Service Level Objectives (SLOs)
+- **[workflow-automate](tools/workflow-automate.md)** - Automate development and operational workflows
 
 ### Development & Testing
-
-#### [`/api-mock`](tools/api-mock.md)
-
-Create realistic API mocks for development and testing.
-
-- OpenAPI-based mock generation
-- Dynamic response generation
-- Stateful mocks
-- Performance simulation
-- Error scenario testing
-
-#### [`/api-scaffold`](tools/api-scaffold.md)
-
-Generate production-ready API endpoints with complete implementation stack.
-
-- **Framework Selection**: Intelligent choice between FastAPI, Django REST, Express.js, Spring Boot
-- **Complete Stack**: Routes, models, schemas, services, repositories, middleware
-- **Security Built-in**: JWT auth, bcrypt hashing, rate limiting, CORS
-- **Database Integration**: SQLAlchemy, Prisma, Django ORM with migrations
-- **Cross-Command Integration**: Works with /test-harness, /security-scan, /docker-optimize
-
-#### [`/test-harness`](tools/test-harness.md)
-
-Create comprehensive test suites with framework detection.
-
-- **Framework Detection**: Automatically selects pytest, Jest, Vitest
-- **Test Types**: Unit, integration, E2E, performance (Locust), security
-- **Modern Patterns**: Fixtures, mocks, factories, parallel execution
-- **CI/CD Ready**: GitHub Actions and GitLab CI workflows included
-- **Cross-Command Integration**: Tests APIs, containers, and more
-
-#### [`/frontend-optimize`](tools/frontend-optimize.md)
-
-Modern frontend performance optimization.
-
-- **Framework Detection**: React, Vue, Angular, Svelte optimizations
-- **Bundle Analysis**: Webpack, Vite, Turbopack configurations
-- **Performance Monitoring**: Core Web Vitals, Lighthouse CI
-- **Modern Patterns**: Code splitting, lazy loading, prefetching
-- **Cross-Command Integration**: API integration, deployment pipelines
+- **[api-mock](tools/api-mock.md)** - Create realistic API mocks for development and testing
+- **[api-scaffold](tools/api-scaffold.md)** - Generate production-ready API endpoints with complete implementation stack
+- **[test-harness](tools/test-harness.md)** - Create comprehensive test suites with framework detection
+- **[frontend-optimize](tools/frontend-optimize.md)** - Modern frontend performance optimization
 
 ### Security & Compliance
-
-#### [`/accessibility-audit`](tools/accessibility-audit.md)
-
-Comprehensive accessibility testing and fixes.
-
-- WCAG 2.1 compliance checking
-- Automated testing setup
-- Screen reader optimization
-- Keyboard navigation
-- ARIA implementation
-
-#### [`/compliance-check`](tools/compliance-check.md)
-
-Ensure regulatory compliance (GDPR, HIPAA, SOC2).
-
-- Data privacy audits
-- Security control verification
-- Compliance documentation
-- Automated compliance tests
-- Remediation guidance
-
-#### [`/security-scan`](tools/security-scan.md)
-
-Comprehensive security scanning with automated remediation.
-
-- **Multi-Tool Scanning**: Bandit, Safety, Trivy, Semgrep, ESLint Security
-- **Automated Fixes**: Common vulnerabilities auto-remediated
-- **CI/CD Integration**: Security gates for GitHub Actions/GitLab CI
-- **Container Scanning**: Image vulnerability analysis
-- **Cross-Command Integration**: Secures APIs, containers, deployments
+- **[accessibility-audit](tools/accessibility-audit.md)** - Comprehensive accessibility testing and fixes
+- **[compliance-check](tools/compliance-check.md)** - Ensure regulatory compliance (GDPR, HIPAA, SOC2)
+- **[security-scan](tools/security-scan.md)** - Comprehensive security scanning with automated remediation
 
 ### Debugging & Analysis
-
-#### [`/debug-trace`](tools/debug-trace.md)
-
-Advanced debugging and tracing strategies.
-
-- Distributed tracing setup
-- Debug symbol management
-- Remote debugging configuration
-- Performance profiling
-- Memory leak detection
-
-#### [`/error-analysis`](tools/error-analysis.md)
-
-Deep error pattern analysis and resolution strategies.
-
-- Root cause analysis
-- Error handling improvements
-- Logging and monitoring enhancements
-- Recovery mechanisms
-- Prevention strategies
-
-#### [`/error-trace`](tools/error-trace.md)
-
-Trace and diagnose production errors.
-
-- Stack trace analysis
-- Error correlation
-- User impact assessment
-- Reproduction steps
-- Fix verification
-
-#### [`/performance-review`](tools/performance-review.md)
-
-Profile and optimize application performance.
-
-- CPU and memory profiling
-- Database query optimization
-- Caching strategy implementation
-- Async/concurrent optimizations
-- Frontend performance improvements
+- **[debug-trace](tools/debug-trace.md)** - Advanced debugging and tracing strategies
+- **[error-analysis](tools/error-analysis.md)** - Deep error pattern analysis and resolution strategies
+- **[error-trace](tools/error-trace.md)** - Trace and diagnose production errors
+- **[performance-review](tools/performance-review.md)** - Profile and optimize application performance
 
 ### Dependencies & Configuration
-
-#### [`/config-validate`](tools/config-validate.md)
-
-Validate and manage application configuration.
-
-- Schema validation
-- Environment variable management
-- Secret handling
-- Configuration drift detection
-- Multi-environment configs
-
-#### [`/deps-audit`](tools/deps-audit.md)
-
-Audit dependencies for security and licensing.
-
-- Vulnerability scanning
-- License compliance
-- Outdated package detection
-- Dependency graph analysis
-- Risk assessment
-
-#### [`/deps-upgrade`](tools/deps-upgrade.md)
-
-Safely upgrade project dependencies.
-
-- Breaking change analysis
-- Compatibility testing
-- Gradual upgrade strategies
-- Rollback plans
-- Automated testing
+- **[config-validate](tools/config-validate.md)** - Validate and manage application configuration
+- **[deps-audit](tools/deps-audit.md)** - Audit dependencies for security and licensing
+- **[deps-upgrade](tools/deps-upgrade.md)** - Safely upgrade project dependencies
 
 ### Documentation & Collaboration
-
-#### [`/doc-generate`](tools/doc-generate.md)
-
-Generate comprehensive documentation.
-
-- API documentation
-- Architecture diagrams
-- Setup guides
-- Runbooks
-- Code examples
-
-#### [`/git-workflow`](tools/git-workflow.md)
-
-Implement effective Git workflows.
-
-- Branching strategies
-- Commit conventions
-- PR templates
-- Merge strategies
-- Release workflows
-
-#### [`/issue`](tools/issue.md)
-
-Create well-structured GitHub/GitLab issues.
-
-- Bug report templates
-- Feature request templates
-- Task breakdowns
-- Acceptance criteria
-- Labels and milestones
-
-#### [`/pr-enhance`](tools/pr-enhance.md)
-
-Enhance pull requests with quality checks.
-
-- PR templates
-- Automated checks
-- Review checklists
-- Change impact analysis
-- Documentation updates
+- **[doc-generate](tools/doc-generate.md)** - Generate comprehensive documentation
+- **[git-workflow](tools/git-workflow.md)** - Implement effective Git workflows
+- **[issue](tools/issue.md)** - Create well-structured GitHub/GitLab issues
+- **[pr-enhance](tools/pr-enhance.md)** - Enhance pull requests with quality checks
 
 ### Cost Optimization
-
-#### [`/cost-optimize`](tools/cost-optimize.md)
-
-Optimize cloud and infrastructure costs.
-
-- Resource utilization analysis
-- Right-sizing recommendations
-- Reserved instance planning
-- Spot instance strategies
-- Cost allocation and tagging
+- **[cost-optimize](tools/cost-optimize.md)** - Optimize cloud and infrastructure costs
 
 ### Onboarding & Setup
-
-#### [`/onboard`](tools/onboard.md)
-
-Set up development environments for new team members.
-
-- Development tool installation
-- IDE configuration
-- Git setup and authentication
-- Project dependencies
-- Local environment configuration
+- **[onboard](tools/onboard.md)** - Set up development environments for new team members
 
 ## Command Features
 
@@ -653,50 +297,202 @@ The real power comes from combining workflows and tools for complete development
 /k8s-manifest Deploy with zero-downtime strategy
 ```
 
+## Command Orchestration Patterns
+
+Commands can be used individually or combined in powerful patterns:
+
+### Sequential Execution
+```bash
+# Build → Test → Secure → Deploy pipeline
+/api-scaffold user management API
+/test-harness comprehensive test suite for user API  
+/security-scan check user API for vulnerabilities
+/k8s-manifest deploy user API to production
+```
+
+### Parallel Analysis
+```bash
+# Multiple perspectives on the same codebase
+/arch-review analyze system architecture
+/security-scan audit security posture  
+/performance-review identify bottlenecks
+# Then consolidate findings
+```
+
+### Iterative Refinement
+```bash
+# Start broad, then narrow focus
+/feature-development implement payment processing
+/security-scan focus on payment security
+/compliance-check ensure PCI compliance
+/test-harness add payment-specific tests
+```
+
+### Cross-Domain Integration
+```bash
+# Frontend + Backend + Infrastructure
+/api-scaffold backend payment API
+/frontend-optimize payment UI components
+/docker-optimize containerize payment service
+/monitor-setup payment metrics and alerts
+```
+
 ## When to Use Workflows vs Tools
 
-### Use Workflows When:
+### 🤖 Use Workflows When:
+- **Multi-domain coordination needed** - Feature touches backend, frontend, and infrastructure
+- **Complex agent orchestration required** - Need multiple specialists working together
+- **End-to-end implementation desired** - Want complete feature from design to deployment
+- **Uncertain about approach** - Let agents determine best implementation strategy
+- **Time constraints** - Need rapid, comprehensive implementation
 
-- You need multiple specialized agents working together
-- The task requires coordination across different domains
-- You want intelligent task delegation and orchestration
-- The problem is complex and benefits from diverse expertise
-- You need end-to-end implementation of a feature
+**Examples:**
+- "Implement user authentication system" → `/feature-development`
+- "Fix performance issues across the stack" → `/smart-fix`
+- "Modernize legacy monolith" → `/legacy-modernize`
 
-### Use Tools When:
+### 🔧 Use Tools When:
+- **Specific expertise needed** - Clear, focused task in one domain
+- **Precise control desired** - Want to direct specific implementation details
+- **Part of manual workflow** - Integrating into existing processes
+- **Deep specialization required** - Need expert-level implementation
+- **Building on existing work** - Enhancing or refining previous outputs
 
-- You have a specific, well-defined task
-- You need deep expertise in a single domain
-- You want direct control over the implementation
-- The task is part of a larger manual workflow
-- You need to customize or iterate on specific aspects
+**Examples:**
+- "Create Kubernetes manifests" → `/k8s-manifest`
+- "Scan for security vulnerabilities" → `/security-scan`
+- "Generate API documentation" → `/doc-generate`
+
+## Command Format
+
+Each command follows this structure:
+```markdown
+---
+name: command-name
+description: Brief description of what the command does
+---
+
+Detailed command implementation with:
+- Framework detection and intelligent selection
+- Complete, production-ready code
+- Security best practices
+- Cross-command integration points
+```
 
 ## Best Practices
 
-1. **Start with workflows** for complex tasks - Let agents coordinate the implementation
-2. **Use tools for refinement** - Apply specific tools to enhance workflow outputs
-3. **Provide context** - Include tech stack, constraints, and requirements
-4. **Leverage agent expertise** - Trust specialized agents with their domains
-5. **Combine approaches** - Use workflows for implementation, tools for optimization
+### 🎯 Command Selection
+1. **Let Claude Code suggest automatically** - The main agent analyzes context and selects optimal commands
+2. **Start with workflows for complex tasks** - Let agents coordinate multi-domain implementations
+3. **Use tools for focused expertise** - Apply specific commands for targeted improvements
+4. **Consider command dependencies** - Some tools work better after specific workflows
+
+### 📝 Request Optimization  
+5. **Provide comprehensive context** - Include tech stack, constraints, existing patterns, and quality requirements
+6. **Be specific about integration points** - Mention how outputs should connect to existing systems
+7. **Specify success criteria** - Define what "done" looks like for your use case
+8. **Include examples when helpful** - Show desired output format or similar implementations
+
+### 🔄 Workflow Management
+9. **Combine commands strategically** - Chain related commands for complete solutions
+10. **Use iterative refinement** - Start broad with workflows, then narrow with tools
+11. **Leverage cross-command integration** - Commands are designed to work together seamlessly
+12. **Monitor progress and provide feedback** - Guide agents with clarifications and corrections
+
+### ⚡ Performance Optimization
+13. **Batch related operations** - Combine similar commands to reduce context switching
+14. **Reuse command outputs** - Build on previous results rather than starting fresh
+15. **Choose appropriate command scope** - Match complexity to command capabilities
 
 ## Contributing
 
-### Adding a New Workflow:
+To add a new command:
+1. Create a new `.md` file in the appropriate directory (`workflows/` or `tools/`)
+2. Use lowercase, hyphen-separated names
+3. Follow the command format structure above
+4. Include comprehensive implementation details
+5. Write clear descriptions for when the command should be used
+6. Use the `$ARGUMENTS` placeholder for user input
 
-1. Create a markdown file in the `workflows/` directory
-2. Define the agent orchestration sequence
-3. Specify which specialized agents to use and in what order
-4. Use the `$ARGUMENTS` placeholder for user input
-5. Focus on coordination and delegation logic
+## Troubleshooting
+
+### Common Issues
+
+**Command not found or not working:**
+- Ensure commands are in `~/.claude/commands/` directory
+- Check command file syntax and format
+- Verify the command name matches the file name
+
+**Unexpected output or behavior:**
+- Provide more context about your project and tech stack
+- Be specific about requirements and constraints
+- Try breaking complex requests into smaller commands
+
+**Workflow commands taking too long:**
+- This is normal - workflows coordinate multiple agents
+- Consider using specific tools for faster, focused results
+- Monitor progress and provide feedback to guide agents
+
+**Tools producing generic outputs:**
+- Include framework/language-specific details in your request
+- Mention existing patterns or preferences in your codebase
+- Provide examples of desired output format
+
+**Cross-command integration issues:**
+- Check that file paths and naming conventions align
+- Ensure commands are run in the correct sequence
+- Verify that dependencies between commands are met
+
+### Getting Help
+
+If commands aren't working as expected:
+1. Check individual command documentation for specific requirements
+2. Try simpler, more focused requests first
+3. Provide more context about your project structure and goals
+4. Use explicit tool invocation to test specific functionality
+
+## Performance Optimization
+
+### 🎯 Efficient Usage Patterns
+
+**Command Selection Strategy:**
+- **Workflows**: Multi-agent coordination, end-to-end implementation
+- **Tools**: Focused, single-domain tasks
+- **Simple requests**: Stay with main agent for basic operations
+
+**Optimization Strategies:**
+1. **Start simple**: Try tools before workflows for known problems
+2. **Batch operations**: Combine multiple related requests
+3. **Reuse context**: Build on previous command outputs
+4. **Early termination**: Stop and adjust if commands aren't producing expected results
+
+### ⚡ Performance Tips
+
+**Faster Command Execution:**
+- Use specific tools for focused tasks rather than broad workflows
+- Provide clear, detailed requirements upfront to avoid iterations
+- Reference existing code patterns and preferences
+- Choose commands that match your exact use case
+
+**Efficient Workflows:**
+- Let workflows complete before requesting modifications
+- Provide comprehensive context in initial request
+- Use cross-command integration rather than isolated commands
+- Monitor agent progress and provide real-time feedback
+
+### Adding a New Workflow:
+- Focus on agent orchestration and delegation logic
+- Specify which specialized agents to use and in what order
+- Define coordination patterns between agents
 
 ### Adding a New Tool:
+- Include complete, production-ready implementations
+- Structure content with clear sections and actionable outputs
+- Include examples, best practices, and integration points
 
-1. Create a markdown file in the `tools/` directory
-2. Include comprehensive implementation details
-3. Use the `$ARGUMENTS` placeholder for user input
-4. Structure content with clear sections and actionable outputs
-5. Include examples, best practices, and integration points
+## Learn More
 
-## License
-
-These commands are provided as development accelerators. Customize generated code to meet your specific requirements and security policies.
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Slash Commands Documentation](https://docs.anthropic.com/en/docs/claude-code/slash-commands)
+- [Subagents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
+- [Claude Code GitHub](https://github.com/anthropics/claude-code)
