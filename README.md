@@ -4,7 +4,11 @@ A comprehensive collection of production-ready slash commands for [Claude Code](
 
 ## Overview
 
-This repository contains 45 specialized slash commands that extend Claude Code's capabilities. Commands are organized into **workflows** (smart agent orchestration) and **tools** (single-purpose utilities) to provide comprehensive development automation.
+This repository contains 52 specialized slash commands that extend Claude Code's capabilities. Commands are organized into **workflows** (smart agent orchestration) and **tools** (single-purpose utilities) to provide comprehensive development automation.
+
+### 🤝 Works with Claude Code Subagents
+
+These commands are designed to work seamlessly with the [Claude Code Subagents collection](https://github.com/wshobson/agents). Many workflow commands orchestrate multiple specialized subagents to handle complex, multi-domain tasks. For the best experience, use both repositories together.
 
 ## Installation
 
@@ -14,6 +18,17 @@ These commands are automatically available when placed in `~/.claude/commands/` 
 cd ~/.claude
 git clone https://github.com/wshobson/commands.git
 ```
+
+### 📦 Complete Setup (Recommended)
+
+For full functionality with subagent orchestration, also install the subagents collection:
+
+```bash
+cd ~/.claude
+git clone https://github.com/wshobson/agents.git
+```
+
+The agent-orchestrated workflows and multi-agent tools in this collection rely on the specialized subagents from the [subagents repository](https://github.com/wshobson/agents) for their enhanced capabilities.
 
 ## Available Commands
 
@@ -549,3 +564,4 @@ If commands aren't working as expected:
 - [Slash Commands Documentation](https://docs.anthropic.com/en/docs/claude-code/slash-commands)
 - [Subagents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
 - [Claude Code GitHub](https://github.com/anthropics/claude-code)
+- [Claude Code Subagents Collection](https://github.com/wshobson/agents) - Specialized subagents used by these commands
