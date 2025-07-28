@@ -59,6 +59,13 @@ These commands use multiple specialized agents working together to complete comp
 - **[multi-platform](workflows/multi-platform.md)** - Builds cross-platform applications coordinating mobile, web, and backend agents
 - **[workflow-automate](workflows/workflow-automate.md)** - Automates development workflows across CI/CD, monitoring, and deployment
 
+### Agent-Orchestrated Workflows
+- **[full-stack-feature](workflows/full-stack-feature.md)** - Orchestrates backend, GraphQL, frontend, and mobile agents for comprehensive multi-platform features
+- **[security-hardening](workflows/security-hardening.md)** - Coordinates security-auditor, backend-architect, and devops agents for security-first implementations
+- **[data-driven-feature](workflows/data-driven-feature.md)** - Integrates data-scientist, data-engineer, backend-architect, and ai-engineer for ML-powered features
+- **[performance-optimization](workflows/performance-optimization.md)** - Combines performance-engineer, database-optimizer, frontend-developer, and cloud-architect for end-to-end optimization
+- **[incident-response](workflows/incident-response.md)** - Mobilizes incident-responder, devops-troubleshooter, debugger, and deployment-engineer for production incident resolution
+
 ## 🔧 Tools (Single-Purpose Commands)
 
 ### AI & Machine Learning
@@ -69,10 +76,8 @@ These commands use multiple specialized agents working together to complete comp
 - **[prompt-optimize](tools/prompt-optimize.md)** - Optimize AI prompts for performance and quality
 
 ### Architecture & Code Quality
-- **[arch-review](tools/arch-review.md)** - Comprehensive architecture analysis and recommendations
 - **[code-explain](tools/code-explain.md)** - Generate detailed explanations of complex code
 - **[code-migrate](tools/code-migrate.md)** - Migrate code between languages, frameworks, or versions
-- **[legacy-modernize](tools/legacy-modernize.md)** - Modernize legacy codebases systematically
 - **[refactor-clean](tools/refactor-clean.md)** - Refactor code for maintainability and performance
 - **[tech-debt](tools/tech-debt.md)** - Analyze and prioritize technical debt
 
@@ -80,7 +85,6 @@ These commands use multiple specialized agents working together to complete comp
 - **[data-pipeline](tools/data-pipeline.md)** - Design scalable data pipeline architectures
 - **[data-validation](tools/data-validation.md)** - Implement comprehensive data validation systems
 - **[db-migrate](tools/db-migrate.md)** - Advanced database migration strategies
-- **[db-optimize](tools/db-optimize.md)** - Optimize database performance and queries
 
 ### DevOps & Infrastructure
 - **[deploy-checklist](tools/deploy-checklist.md)** - Generate deployment configurations and checklists
@@ -94,7 +98,6 @@ These commands use multiple specialized agents working together to complete comp
 - **[api-mock](tools/api-mock.md)** - Create realistic API mocks for development and testing
 - **[api-scaffold](tools/api-scaffold.md)** - Generate production-ready API endpoints with complete implementation stack
 - **[test-harness](tools/test-harness.md)** - Create comprehensive test suites with framework detection
-- **[frontend-optimize](tools/frontend-optimize.md)** - Modern frontend performance optimization
 
 ### Security & Compliance
 - **[accessibility-audit](tools/accessibility-audit.md)** - Comprehensive accessibility testing and fixes
@@ -105,7 +108,7 @@ These commands use multiple specialized agents working together to complete comp
 - **[debug-trace](tools/debug-trace.md)** - Advanced debugging and tracing strategies
 - **[error-analysis](tools/error-analysis.md)** - Deep error pattern analysis and resolution strategies
 - **[error-trace](tools/error-trace.md)** - Trace and diagnose production errors
-- **[performance-review](tools/performance-review.md)** - Profile and optimize application performance
+- **[issue](tools/issue.md)** - Create well-structured GitHub/GitLab issues
 
 ### Dependencies & Configuration
 - **[config-validate](tools/config-validate.md)** - Validate and manage application configuration
@@ -115,7 +118,6 @@ These commands use multiple specialized agents working together to complete comp
 ### Documentation & Collaboration
 - **[doc-generate](tools/doc-generate.md)** - Generate comprehensive documentation
 - **[git-workflow](tools/git-workflow.md)** - Implement effective Git workflows
-- **[issue](tools/issue.md)** - Create well-structured GitHub/GitLab issues
 - **[pr-enhance](tools/pr-enhance.md)** - Enhance pull requests with quality checks
 
 ### Cost Optimization
@@ -123,6 +125,13 @@ These commands use multiple specialized agents working together to complete comp
 
 ### Onboarding & Setup
 - **[onboard](tools/onboard.md)** - Set up development environments for new team members
+
+### Agent-Specific Tools
+- **[multi-agent-review](tools/multi-agent-review.md)** - Multi-perspective code review using code-reviewer, security-auditor, and architect-reviewer agents
+- **[smart-debug](tools/smart-debug.md)** - Deep debugging with debugger agent, includes performance-engineer for performance issues
+- **[multi-agent-optimize](tools/multi-agent-optimize.md)** - Full-stack optimization coordinating database-optimizer, performance-engineer, and frontend-developer
+- **[context-save](tools/context-save.md)** - Save project context using context-manager agent for better continuity
+- **[context-restore](tools/context-restore.md)** - Restore saved context to maintain project knowledge across sessions
 
 ## Command Features
 
@@ -140,25 +149,27 @@ All commands include:
 
 ## Command Count
 
-**Total: 45 production-ready slash commands** organized into:
+**Total: 52 production-ready slash commands** organized into:
 
-### 🤖 Workflows (9 commands)
+### 🤖 Workflows (14 commands)
 
-- Feature Development & Review (3 commands)
+- Feature Development & Review (3 commands) 
 - Development Process Automation (6 commands)
+- Agent-Orchestrated Workflows (5 commands)
 
-### 🔧 Tools (36 commands)
+### 🔧 Tools (38 commands)
 
 - AI & Machine Learning (5 commands)
-- Architecture & Code Quality (6 commands)
-- Data & Database (4 commands)
+- Architecture & Code Quality (4 commands)
+- Data & Database (3 commands)
 - DevOps & Infrastructure (6 commands)
-- Development & Testing (4 commands)
+- Development & Testing (3 commands)
 - Security & Compliance (3 commands)
 - Debugging & Analysis (4 commands)
 - Dependencies & Configuration (3 commands)
 - Documentation & Collaboration (1 command)
 - Onboarding & Setup (1 command)
+- Agent-Specific Tools (5 commands)
 
 ## Usage Examples
 
@@ -176,6 +187,21 @@ All commands include:
 
 # Modernize legacy system with coordinated agents
 /legacy-modernize Migrate monolithic Java app to microservices architecture
+
+# Build comprehensive multi-platform feature
+/full-stack-feature User authentication with social login across web and mobile
+
+# Implement security-first architecture
+/security-hardening Harden API endpoints and implement zero-trust security model
+
+# Create data-driven ML feature
+/data-driven-feature Build recommendation engine with real-time personalization
+
+# Optimize entire application stack
+/performance-optimization Improve response times and reduce infrastructure costs
+
+# Respond to production incident
+/incident-response High CPU usage causing service degradation in production
 ```
 
 ### 🔧 Tool Examples (Single-Purpose Commands)
@@ -185,7 +211,7 @@ All commands include:
 /api-scaffold user CRUD operations with JWT auth and role-based access
 
 # Review microservices architecture
-/arch-review analyze our microservices for coupling and scalability issues
+/multi-agent-review analyze our microservices for coupling and scalability issues
 
 # Optimize LLM chat application
 /prompt-optimize reduce latency for customer support chatbot while maintaining accuracy
@@ -204,6 +230,21 @@ All commands include:
 
 # Onboard new developer
 /onboard Setup development environment for React/Node.js project
+
+# Multi-agent code review
+/multi-agent-review Review authentication module for security and architecture
+
+# Deep debugging with specialized agents
+/smart-debug Investigate memory leak in production workers
+
+# Full-stack optimization
+/multi-agent-optimize Optimize checkout flow for better conversion
+
+# Save project context
+/context-save Save current project state and architectural decisions
+
+# Restore project context
+/context-restore Load context from last week's sprint
 ```
 
 ## Enhanced Commands
@@ -241,16 +282,6 @@ Production-grade Kubernetes deployments.
 - **Service Mesh**: Istio/Linkerd integration
 
 ### Frontend & Data
-
-#### [`/frontend-optimize`](tools/frontend-optimize.md)
-
-Modern frontend performance optimization.
-
-- **Framework Detection**: React, Vue, Angular, Svelte optimizations
-- **Bundle Analysis**: Webpack, Vite, Turbopack configurations
-- **Performance Monitoring**: Core Web Vitals, Lighthouse CI
-- **Modern Patterns**: Code splitting, lazy loading, prefetching
-- **CDN & Caching**: Cloudflare, Fastly configurations
 
 #### [`/db-migrate`](tools/db-migrate.md)
 
@@ -313,9 +344,9 @@ Commands can be used individually or combined in powerful patterns:
 ### Parallel Analysis
 ```bash
 # Multiple perspectives on the same codebase
-/arch-review analyze system architecture
+/multi-agent-review comprehensive architecture and code review
 /security-scan audit security posture  
-/performance-review identify bottlenecks
+/performance-optimization identify and fix bottlenecks
 # Then consolidate findings
 ```
 
@@ -332,10 +363,32 @@ Commands can be used individually or combined in powerful patterns:
 ```bash
 # Frontend + Backend + Infrastructure
 /api-scaffold backend payment API
-/frontend-optimize payment UI components
+/multi-agent-optimize optimize payment flow performance
 /docker-optimize containerize payment service
 /monitor-setup payment metrics and alerts
 ```
+
+## When to Use Agent Commands vs Specialized Tools
+
+### 🔀 Agent-Based Commands (Workflows & Multi-Agent Tools)
+Use these when you need:
+- **Problem-solving**: Agents analyze and solve issues (e.g., `/smart-debug`, `/multi-agent-optimize`)
+- **Multiple perspectives**: Coordinated review from different specialists (e.g., `/multi-agent-review`)
+- **Complex orchestration**: Multi-step processes requiring different expertise (e.g., `/full-stack-feature`)
+- **Adaptive solutions**: When the approach needs to be determined based on the problem
+
+### 🛠️ Specialized Tools
+Use these when you need:
+- **Infrastructure setup**: Configure debugging, monitoring, or testing environments (e.g., `/debug-trace`, `/monitor-setup`)
+- **Code generation**: Create specific implementations or configurations (e.g., `/api-scaffold`, `/k8s-manifest`)
+- **Analysis without fixes**: Understand patterns or generate reports (e.g., `/error-analysis`, `/tech-debt`)
+- **Domain-specific tasks**: Highly specialized operations (e.g., `/ai-review` for ML code, `/langchain-agent` for LangChain)
+
+### 📋 Key Differences
+- **Agent commands** solve problems by analyzing and implementing fixes
+- **Setup tools** create infrastructure and configurations
+- **Agent commands** adapt their approach based on the issue
+- **Specialized tools** follow predefined patterns and templates
 
 ## When to Use Workflows vs Tools
 
