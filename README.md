@@ -1,85 +1,61 @@
-# Claude Code Slash Commands Collection
+# Claude Code Slash Commands
 
-A comprehensive collection of production-ready slash commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), designed to accelerate software development workflows through intelligent automation and agent orchestration.
+Production-ready slash commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) that accelerate development through intelligent automation.
 
-## Overview
+**52 commands** organized as:
+- **🤖 Workflows**: Multi-subagent orchestration for complex tasks
+- **🔧 Tools**: Single-purpose utilities for specific operations
 
-This repository contains 52 specialized slash commands that extend Claude Code's capabilities. Commands are organized into **workflows** (smart agent orchestration) and **tools** (single-purpose utilities) to provide comprehensive development automation.
+### 🤝 Requires Claude Code Subagents
 
-### 🤝 Works with Claude Code Subagents
-
-These commands are designed to work seamlessly with the [Claude Code Subagents collection](https://github.com/wshobson/agents). Many workflow commands orchestrate multiple specialized subagents to handle complex, multi-domain tasks. For the best experience, use both repositories together.
+These commands work with the [Claude Code Subagents](https://github.com/wshobson/agents) for orchestration capabilities.
 
 ## Installation
-
-These commands are automatically available when placed in `~/.claude/commands/` directory.
 
 ```bash
 cd ~/.claude
 git clone https://github.com/wshobson/commands.git
+git clone https://github.com/wshobson/agents.git  # Required for subagent orchestration
 ```
-
-### 📦 Complete Setup (Recommended)
-
-For full functionality with subagent orchestration, also install the subagents collection:
-
-```bash
-cd ~/.claude
-git clone https://github.com/wshobson/agents.git
-```
-
-The agent-orchestrated workflows and multi-agent tools in this collection rely on the specialized subagents from the [subagents repository](https://github.com/wshobson/agents) for their enhanced capabilities.
 
 ## Available Commands
 
-The collection is organized into:
-
-- **🤖 Workflows** (`/workflows/`): Smart agent orchestration commands that coordinate multiple specialized subagents to complete complex, multi-step tasks
-- **🔧 Tools** (`/tools/`): Single-purpose commands for specific development tasks with comprehensive implementations
+- **🤖 Workflows** - Orchestrate multiple subagents for complex tasks
+- **🔧 Tools** - Single-purpose commands for specific operations
 
 ## Usage
 
-### Automatic Invocation
-Claude Code will automatically suggest appropriate commands based on the task context and requirements.
-
-### Explicit Invocation
-Run any command directly by typing the command name:
-```
+```bash
 /api-scaffold user management with authentication
-/security-scan check for vulnerabilities in Docker images
-/feature-development implement real-time chat functionality
+/security-scan check for vulnerabilities
+/feature-development implement chat functionality
 ```
 
-### Key Features
+Claude Code automatically suggests relevant commands based on context.
 
-- **Agent Orchestration**: Workflows intelligently delegate tasks to specialized agents (backend-architect, frontend-developer, security-auditor, etc.)
-- **Framework-Specific Implementations**: Intelligent framework selection with complete implementations for FastAPI, Express.js, Django, Spring Boot, and more
-- **Cross-Command Integration**: Commands work together seamlessly - API scaffolds integrate with testing, security scanning feeds into deployment
-- **Production-Ready**: Complete implementations with no TODOs or placeholders
+## 🤖 Workflows
 
-## 🤖 Workflows (Smart Agent Commands)
-
-These commands use multiple specialized agents working together to complete complex tasks:
+Multi-subagent orchestration for complex tasks:
 
 ### Feature Development
-- **[feature-development](workflows/feature-development.md)** - Orchestrates backend-architect, frontend-developer, test-automator, and deployment-engineer to implement complete features
-- **[full-review](workflows/full-review.md)** - Comprehensive review using code-reviewer, security-auditor, architect-reviewer, performance-engineer, and test-automator
-- **[smart-fix](workflows/smart-fix.md)** - Intelligently analyzes issues and delegates to the most appropriate specialist agents
+- **[feature-development](workflows/feature-development.md)** - Backend, frontend, testing, and deployment subagents build complete features
+- **[full-review](workflows/full-review.md)** - Multiple review subagents provide comprehensive code analysis
+- **[smart-fix](workflows/smart-fix.md)** - Analyzes issues and delegates to appropriate specialist subagents
 
 ### Development Processes
 - **[git-workflow](workflows/git-workflow.md)** - Implements effective Git workflows with branching strategies and PR templates
-- **[improve-agent](workflows/improve-agent.md)** - Enhances agent performance through prompt optimization and capability analysis
-- **[legacy-modernize](workflows/legacy-modernize.md)** - Systematically modernizes legacy codebases using specialized migration agents
-- **[ml-pipeline](workflows/ml-pipeline.md)** - Creates end-to-end ML pipelines with MLOps using data and ML engineering agents
-- **[multi-platform](workflows/multi-platform.md)** - Builds cross-platform applications coordinating mobile, web, and backend agents
-- **[workflow-automate](workflows/workflow-automate.md)** - Automates development workflows across CI/CD, monitoring, and deployment
+- **[improve-agent](workflows/improve-agent.md)** - Enhances subagent performance through prompt optimization
+- **[legacy-modernize](workflows/legacy-modernize.md)** - Modernizes legacy codebases using specialized subagents
+- **[ml-pipeline](workflows/ml-pipeline.md)** - Creates ML pipelines with data and ML engineering subagents
+- **[multi-platform](workflows/multi-platform.md)** - Builds cross-platform apps with coordinated subagents
+- **[workflow-automate](workflows/workflow-automate.md)** - Automates CI/CD, monitoring, and deployment workflows
 
-### Agent-Orchestrated Workflows
-- **[full-stack-feature](workflows/full-stack-feature.md)** - Orchestrates backend, GraphQL, frontend, and mobile agents for comprehensive multi-platform features
-- **[security-hardening](workflows/security-hardening.md)** - Coordinates security-auditor, backend-architect, and devops agents for security-first implementations
-- **[data-driven-feature](workflows/data-driven-feature.md)** - Integrates data-scientist, data-engineer, backend-architect, and ai-engineer for ML-powered features
-- **[performance-optimization](workflows/performance-optimization.md)** - Combines performance-engineer, database-optimizer, frontend-developer, and cloud-architect for end-to-end optimization
-- **[incident-response](workflows/incident-response.md)** - Mobilizes incident-responder, devops-troubleshooter, debugger, and deployment-engineer for production incident resolution
+### Subagent-Orchestrated Workflows
+- **[full-stack-feature](workflows/full-stack-feature.md)** - Multi-platform features with backend, frontend, and mobile subagents
+- **[security-hardening](workflows/security-hardening.md)** - Security-first implementation with specialized subagents
+- **[data-driven-feature](workflows/data-driven-feature.md)** - ML-powered features with data science subagents
+- **[performance-optimization](workflows/performance-optimization.md)** - End-to-end optimization with performance subagents
+- **[incident-response](workflows/incident-response.md)** - Production incident resolution with ops subagents
 
 ## 🔧 Tools (Single-Purpose Commands)
 
@@ -141,26 +117,20 @@ These commands use multiple specialized agents working together to complete comp
 ### Onboarding & Setup
 - **[onboard](tools/onboard.md)** - Set up development environments for new team members
 
-### Agent-Specific Tools
-- **[multi-agent-review](tools/multi-agent-review.md)** - Multi-perspective code review using code-reviewer, security-auditor, and architect-reviewer agents
-- **[smart-debug](tools/smart-debug.md)** - Deep debugging with debugger agent, includes performance-engineer for performance issues
-- **[multi-agent-optimize](tools/multi-agent-optimize.md)** - Full-stack optimization coordinating database-optimizer, performance-engineer, and frontend-developer
-- **[context-save](tools/context-save.md)** - Save project context using context-manager agent for better continuity
-- **[context-restore](tools/context-restore.md)** - Restore saved context to maintain project knowledge across sessions
+### Subagent Tools
+- **[multi-agent-review](tools/multi-agent-review.md)** - Multi-perspective code review with specialized subagents
+- **[smart-debug](tools/smart-debug.md)** - Deep debugging with debugger and performance subagents
+- **[multi-agent-optimize](tools/multi-agent-optimize.md)** - Full-stack optimization with multiple subagents
+- **[context-save](tools/context-save.md)** - Save project context using context-manager subagent
+- **[context-restore](tools/context-restore.md)** - Restore saved context for continuity
 
-## Command Features
+## Features
 
-All commands include:
-
-- **Production-ready code** - Complete implementations with no placeholders or TODOs
-- **Framework Intelligence** - Automatic detection and optimization for your tech stack
-- **Security best practices** - Authentication, validation, sanitization, vulnerability scanning
-- **Monitoring & observability** - Prometheus metrics, OpenTelemetry tracing, structured logging
-- **Comprehensive testing** - Unit, integration, performance tests with modern frameworks
-- **Documentation** - API docs, architecture diagrams, deployment guides, runbooks
-- **Performance optimization** - Caching, async patterns, resource efficiency, CDN integration
-- **Error handling** - Graceful degradation, circuit breakers, recovery strategies
-- **Cross-Command Workflows** - Commands integrate seamlessly for complete development workflows
+- Production-ready implementations
+- Framework auto-detection
+- Security best practices
+- Built-in monitoring and testing
+- Commands work together seamlessly
 
 ## Command Count
 
@@ -170,7 +140,7 @@ All commands include:
 
 - Feature Development & Review (3 commands) 
 - Development Process Automation (6 commands)
-- Agent-Orchestrated Workflows (5 commands)
+- Subagent-Orchestrated Workflows (5 commands)
 
 ### 🔧 Tools (38 commands)
 
@@ -184,24 +154,24 @@ All commands include:
 - Dependencies & Configuration (3 commands)
 - Documentation & Collaboration (1 command)
 - Onboarding & Setup (1 command)
-- Agent-Specific Tools (5 commands)
+- Subagent-Specific Tools (5 commands)
 
 ## Usage Examples
 
-### 🤖 Workflow Examples (Multi-Agent Orchestration)
+### 🤖 Workflow Examples
 
 ```bash
-# Implement a complete feature with multiple agents
-/feature-development Add user authentication with OAuth2, profile management, and email verification
+# Implement a complete feature
+/feature-development Add user authentication with OAuth2
 
-# Perform comprehensive code review with specialist agents
-/full-review Review the authentication module for security, performance, and architecture
+# Comprehensive code review
+/full-review Review the authentication module
 
-# Smart issue resolution with automatic agent selection
+# Smart issue resolution
 /smart-fix Fix performance degradation in API response times
 
-# Modernize legacy system with coordinated agents
-/legacy-modernize Migrate monolithic Java app to microservices architecture
+# Modernize legacy system
+/legacy-modernize Migrate monolithic Java app to microservices
 
 # Build comprehensive multi-platform feature
 /full-stack-feature User authentication with social login across web and mobile
@@ -246,10 +216,10 @@ All commands include:
 # Onboard new developer
 /onboard Setup development environment for React/Node.js project
 
-# Multi-agent code review
-/multi-agent-review Review authentication module for security and architecture
+# Multi-perspective code review
+/multi-agent-review Review authentication module
 
-# Deep debugging with specialized agents
+# Deep debugging
 /smart-debug Investigate memory leak in production workers
 
 # Full-stack optimization
@@ -315,7 +285,7 @@ The real power comes from combining workflows and tools for complete development
 ### Example: Building a New Feature
 
 ```bash
-# 1. Use a workflow to implement the feature with multiple agents
+# 1. Use a workflow to implement the feature with multiple subagents
 /feature-development Add real-time chat feature with WebSocket support
 
 # 2. Use tools for specific enhancements
@@ -383,36 +353,19 @@ Commands can be used individually or combined in powerful patterns:
 /monitor-setup payment metrics and alerts
 ```
 
-## When to Use Agent Commands vs Specialized Tools
-
-### 🔀 Agent-Based Commands (Workflows & Multi-Agent Tools)
-Use these when you need:
-- **Problem-solving**: Agents analyze and solve issues (e.g., `/smart-debug`, `/multi-agent-optimize`)
-- **Multiple perspectives**: Coordinated review from different specialists (e.g., `/multi-agent-review`)
-- **Complex orchestration**: Multi-step processes requiring different expertise (e.g., `/full-stack-feature`)
-- **Adaptive solutions**: When the approach needs to be determined based on the problem
-
-### 🛠️ Specialized Tools
-Use these when you need:
-- **Infrastructure setup**: Configure debugging, monitoring, or testing environments (e.g., `/debug-trace`, `/monitor-setup`)
-- **Code generation**: Create specific implementations or configurations (e.g., `/api-scaffold`, `/k8s-manifest`)
-- **Analysis without fixes**: Understand patterns or generate reports (e.g., `/error-analysis`, `/tech-debt`)
-- **Domain-specific tasks**: Highly specialized operations (e.g., `/ai-review` for ML code, `/langchain-agent` for LangChain)
-
-### 📋 Key Differences
-- **Agent commands** solve problems by analyzing and implementing fixes
-- **Setup tools** create infrastructure and configurations
-- **Agent commands** adapt their approach based on the issue
-- **Specialized tools** follow predefined patterns and templates
-
 ## When to Use Workflows vs Tools
 
-### 🤖 Use Workflows When:
-- **Multi-domain coordination needed** - Feature touches backend, frontend, and infrastructure
-- **Complex agent orchestration required** - Need multiple specialists working together
-- **End-to-end implementation desired** - Want complete feature from design to deployment
-- **Uncertain about approach** - Let agents determine best implementation strategy
-- **Time constraints** - Need rapid, comprehensive implementation
+### 🔀 Workflows & Subagent Tools
+- **Problem-solving**: Analyze and fix issues adaptively
+- **Multiple perspectives**: Coordinate specialist subagents
+- **Complex tasks**: Multi-step processes across domains
+- **Unknown solutions**: Let subagents determine approach
+
+### 🛠️ Specialized Tools
+- **Infrastructure setup**: Configure environments
+- **Code generation**: Create specific implementations
+- **Analysis**: Generate reports without fixes
+- **Domain tasks**: Highly specialized operations
 
 **Examples:**
 - "Implement user authentication system" → `/feature-development`
@@ -433,125 +386,56 @@ Use these when you need:
 
 ## Command Format
 
-Each command follows this structure:
-```markdown
----
-name: command-name
-description: Brief description of what the command does
----
-
-Detailed command implementation with:
-- Framework detection and intelligent selection
-- Complete, production-ready code
-- Security best practices
-- Cross-command integration points
-```
+Slash commands are simple markdown files where:
+- The filename becomes the command name (e.g., `api-scaffold.md` → `/api-scaffold`)
+- The file content is the prompt/instructions executed when invoked
+- Use `$ARGUMENTS` placeholder for user input
 
 ## Best Practices
 
-### 🎯 Command Selection
-1. **Let Claude Code suggest automatically** - The main agent analyzes context and selects optimal commands
-2. **Start with workflows for complex tasks** - Let agents coordinate multi-domain implementations
-3. **Use tools for focused expertise** - Apply specific commands for targeted improvements
-4. **Consider command dependencies** - Some tools work better after specific workflows
+### Command Selection
+- **Let Claude Code suggest automatically** - Analyzes context and selects optimal commands
+- **Use workflows for complex tasks** - Subagents coordinate multi-domain implementations
+- **Use tools for focused tasks** - Apply specific commands for targeted improvements
 
-### 📝 Request Optimization  
-5. **Provide comprehensive context** - Include tech stack, constraints, existing patterns, and quality requirements
-6. **Be specific about integration points** - Mention how outputs should connect to existing systems
-7. **Specify success criteria** - Define what "done" looks like for your use case
-8. **Include examples when helpful** - Show desired output format or similar implementations
-
-### 🔄 Workflow Management
-9. **Combine commands strategically** - Chain related commands for complete solutions
-10. **Use iterative refinement** - Start broad with workflows, then narrow with tools
-11. **Leverage cross-command integration** - Commands are designed to work together seamlessly
-12. **Monitor progress and provide feedback** - Guide agents with clarifications and corrections
-
-### ⚡ Performance Optimization
-13. **Batch related operations** - Combine similar commands to reduce context switching
-14. **Reuse command outputs** - Build on previous results rather than starting fresh
-15. **Choose appropriate command scope** - Match complexity to command capabilities
+### Effective Usage
+- **Provide comprehensive context** - Include tech stack, constraints, and requirements
+- **Chain commands strategically** - Workflows → Tools → Refinements
+- **Build on previous outputs** - Commands are designed to work together
 
 ## Contributing
 
-To add a new command:
-1. Create a new `.md` file in the appropriate directory (`workflows/` or `tools/`)
-2. Use lowercase, hyphen-separated names
-3. Follow the command format structure above
-4. Include comprehensive implementation details
-5. Write clear descriptions for when the command should be used
-6. Use the `$ARGUMENTS` placeholder for user input
+1. Create `.md` file in `workflows/` or `tools/`
+2. Use lowercase-hyphen-names
+3. Include `$ARGUMENTS` for user input
 
 ## Troubleshooting
 
-### Common Issues
+**Command not found**: Check files are in `~/.claude/commands/`
 
-**Command not found or not working:**
-- Ensure commands are in `~/.claude/commands/` directory
-- Check command file syntax and format
-- Verify the command name matches the file name
+**Workflows slow**: Normal - they coordinate multiple subagents
 
-**Unexpected output or behavior:**
-- Provide more context about your project and tech stack
-- Be specific about requirements and constraints
-- Try breaking complex requests into smaller commands
+**Generic output**: Add more specific context about your tech stack
 
-**Workflow commands taking too long:**
-- This is normal - workflows coordinate multiple agents
-- Consider using specific tools for faster, focused results
-- Monitor progress and provide feedback to guide agents
+**Integration issues**: Verify file paths and command sequence
 
-**Tools producing generic outputs:**
-- Include framework/language-specific details in your request
-- Mention existing patterns or preferences in your codebase
-- Provide examples of desired output format
+## Performance Tips
 
-**Cross-command integration issues:**
-- Check that file paths and naming conventions align
-- Ensure commands are run in the correct sequence
-- Verify that dependencies between commands are met
+**Command Selection:**
+- **Workflows**: Multi-subagent coordination for complex features
+- **Tools**: Single-purpose operations for specific tasks
+- **Simple edits**: Stay with main agent
 
-### Getting Help
-
-If commands aren't working as expected:
-1. Check individual command documentation for specific requirements
-2. Try simpler, more focused requests first
-3. Provide more context about your project structure and goals
-4. Use explicit tool invocation to test specific functionality
-
-## Performance Optimization
-
-### 🎯 Efficient Usage Patterns
-
-**Command Selection Strategy:**
-- **Workflows**: Multi-agent coordination, end-to-end implementation
-- **Tools**: Focused, single-domain tasks
-- **Simple requests**: Stay with main agent for basic operations
-
-**Optimization Strategies:**
-1. **Start simple**: Try tools before workflows for known problems
-2. **Batch operations**: Combine multiple related requests
-3. **Reuse context**: Build on previous command outputs
-4. **Early termination**: Stop and adjust if commands aren't producing expected results
-
-### ⚡ Performance Tips
-
-**Faster Command Execution:**
-- Use specific tools for focused tasks rather than broad workflows
-- Provide clear, detailed requirements upfront to avoid iterations
-- Reference existing code patterns and preferences
-- Choose commands that match your exact use case
-
-**Efficient Workflows:**
-- Let workflows complete before requesting modifications
-- Provide comprehensive context in initial request
-- Use cross-command integration rather than isolated commands
-- Monitor agent progress and provide real-time feedback
+**Optimization:**
+- Start with tools for known problems
+- Provide detailed requirements upfront
+- Build on previous command outputs
+- Let workflows complete before modifications
 
 ### Adding a New Workflow:
-- Focus on agent orchestration and delegation logic
-- Specify which specialized agents to use and in what order
-- Define coordination patterns between agents
+- Focus on subagent orchestration and delegation logic
+- Specify which specialized subagents to use and in what order
+- Define coordination patterns between subagents
 
 ### Adding a New Tool:
 - Include complete, production-ready implementations
