@@ -1,21 +1,14 @@
 Check PR #$ARGUMENTS for review comments and make necessary fixes.
 
-**Steps:**
-1. Use `gh api` to fetch inline review comments, general comments, and review summaries
-2. Analyze feedback and identify required changes
-3. Implement fixes
-4. Push changes
+Install extension if needed: `gh extension install agynio/gh-pr-review`
 
-**Key commands:**
+**Fetch unresolved review comments:**
 ```bash
-# Inline comments (most important - specific code feedback)
-gh api "repos/{owner}/{repo}/pulls/$PR_NUM/comments"
-
-# General PR comments
-gh api "repos/{owner}/{repo}/issues/$PR_NUM/comments"
-
-# Review summaries
-gh api "repos/{owner}/{repo}/pulls/$PR_NUM/reviews"
+gh pr-review review view $ARGUMENTS --unresolved --not_outdated
 ```
 
-Focus on inline review comments first as they point to specific lines needing changes.
+**Workflow:**
+1. Fetch comments using command above
+2. Fix each issue at the specified `path:line`
+3. Push changes
+4. Resolve threads: `gh pr-review threads resolve $ARGUMENTS --thread-id <THREAD_ID>`
